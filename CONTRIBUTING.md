@@ -4,7 +4,7 @@ Welcome to my project! I'm really happy that you're interested in contributing t
 
 ### Our Community Values
 
-I believe in fostering a creative and respectful environment for everyone. Please take a moment to read the [Code of Conduct](CODE-OF-CONDUCT) (basically, don't be a d*ck). By participating in this project, you agree to uphold these standards.
+I believe in fostering a creative and respectful environment for everyone. Please take a moment to read the [Code of Conduct](CODE_OF_CONDUCT) (basically, don't be a d*ck). By participating in this project, you agree to uphold these standards.
 
 ### How to Submit Your Own World
 
