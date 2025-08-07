@@ -1,1 +1,6 @@
-This is the hme page for the **example**!
+---
+layout: default
+title: My first world
+---
+
+This is the home page for the **example**!
