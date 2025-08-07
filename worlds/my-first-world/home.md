@@ -7,6 +7,6 @@ This is the home page for the **example**!
 
 Here are other pages for this world:
 
-[History](history)
+[History](history.md)
 
-[Characters](characters)
+[Characters](characters.md)
