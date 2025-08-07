@@ -3,18 +3,17 @@ layout: default
 title: Welcome
 ---
 
-<h2>Welcome to the Hub!</h2>
-<p>This is a place for creators to share and collaborate on their lore. Explore the worlds submitted by our community or <a href="/CONTRIBUTING.md">submit your own</a>!</p>
+<h2>Welcome to Lore Hub!</h2>
+<p>This is a place for creators to share and collaborate on their lore. Explore the worlds submitted by our community or <a href="{{ site.baseurl }}/CONTRIBUTING.md">submit your own</a>!</p>
 
 <hr>
 
 <h3>All Worlds</h3>
 <ul>
-  {% assign worlds = site.html_pages | where: "dir", "/worlds/" | group_by: "dir" %}
-  {% for world in worlds %}
-    {% assign home_page = world.items | where: "name", "home.md" | first %}
-    {% if home_page %}
-      <li><a href="{{ site.baseurl }}{{ home_page.url }}">{{ world.name | replace: "/worlds/", "" | replace: "/", "" | capitalize }}</a></li>
+  {% for page in site.html_pages %}
+    {% if page.path contains "worlds/" and page.name == "home.md" %}
+      {% assign world_name = page.path | split: '/' | slice: 1 | first %}
+      <li><a href="{{ site.baseurl }}{{ page.url }}">{{ world_name | replace: "-", " " | capitalize }}</a></li>
     {% endif %}
   {% endfor %}
 </ul>
