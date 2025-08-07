@@ -1,6 +1,6 @@
 ---
 layout: default
-title: History of my First World
+title: History for my First World
 ---
 
 # History of my First World
